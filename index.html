@@ -460,22 +460,23 @@
     }
     .about-visual {
       aspect-ratio: 3/4;
-      background: linear-gradient(160deg, var(--plum) 0%, var(--burgundy) 60%, var(--cosmic) 100%);
       border-radius: 2px;
       position: relative;
       overflow: hidden;
+      background: var(--midnight);
     }
-    /* Decorative texture overlay */
+    .about-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+      display: block;
+    }
     .about-visual::after {
       content: '';
       position: absolute;
       inset: 0;
-      background:
-        repeating-linear-gradient(
-          45deg,
-          transparent 0px, transparent 20px,
-          rgba(242,237,228,0.02) 20px, rgba(242,237,228,0.02) 21px
-        );
+      background: linear-gradient(to top, rgba(26,26,46,0.75) 0%, transparent 50%);
     }
     .about-visual-text {
       position: absolute;
@@ -855,6 +856,7 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-visual reveal">
+          <img src="alison.jpg" alt="Alison Gonzalez — AG Luxe Lab" />
           <div class="about-visual-text">
             <div class="about-visual-name">Alison</div>
             <div class="about-visual-title">Lash Artist · Teeth Whitening Pro · Esti Student · Marketing Strategist</div>
