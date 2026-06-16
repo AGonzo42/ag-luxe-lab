@@ -14,13 +14,15 @@
   <style>
     /* ── Brand Tokens ─────────────────────────────────── */
     :root {
-      --midnight:   #1A1A2E;
-      --burgundy:   #6D1A36;
-      --plum:       #3D1A4E;
-      --parchment:  #F2EDE4;
-      --cosmic:     #1B3A6B;
-      --parchment-muted: rgba(242,237,228,0.65);
-      --parchment-subtle: rgba(242,237,228,0.12);
+      --midnight:   #0d0d1a;
+      --burgundy:   #6b1a2a;
+      --plum:       #3d1f3f;
+      --parchment:  #e8e2d9;
+      --cosmic:     #2a4a7f;
+      --peppercorn: #3e3b38;
+      --parchment-light: #f2ede6;
+      --parchment-muted: rgba(232,226,217,0.65);
+      --parchment-subtle: rgba(232,226,217,0.12);
     }
 
     /* ── Reset ────────────────────────────────────────── */
@@ -459,7 +461,7 @@
       align-items: center;
     }
     .about-visual {
-      aspect-ratio: 3/4;
+      aspect-ratio: 2/3;
       border-radius: 2px;
       position: relative;
       overflow: hidden;
@@ -468,8 +470,8 @@
     .about-visual img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: center 35%;
+      object-fit: contain;
+      object-position: center center;
       display: block;
     }
     .about-visual::after {
